@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+
+
+{% block content%}
+
+<form action="" method="POST">
+    {% csrf_token %}
+    
+    <p>are you sure to delete{{batman.title}}</p>
+    <input type="submit" name=Delete>
+</form>
+
+{% endblock %}
